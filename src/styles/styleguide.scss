@@ -19,6 +19,10 @@ body{
     font-family: 'ProximaNova-Regular';
     background-color: $bg-color-dark;
     color:$text-color-light ;
+    &.light{
+        background-color: $text-color-light ;
+        color: $bg-color-dark; 
+    }
 }
 
 .container{
@@ -84,7 +88,9 @@ strong{
     font-weight: normal;
     font-style: normal;
 }
-
+.hidden{
+    display: none;
+}
 
 @font-face {
     font-family: 'ProximaNova-Bold';
