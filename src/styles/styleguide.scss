@@ -1,0 +1,94 @@
+$bg-color-dark:#150a1b;
+$text-color-light:#fdfdfd;
+$indent:8px;
+
+$grid-small: 480px;
+$grid-medium: 768px;
+$grid-large: 1024px;
+$grid-desktop: 1280px;
+$grid-widescreen: 1440px;
+$width-site: rem(1280px);
+
+
+
+
+
+
+
+body{
+    font-family: 'ProximaNova-Regular';
+    background-color: $bg-color-dark;
+    color:$text-color-light ;
+}
+
+.container{
+    margin: 0 $indent*5;
+    @include for-tablet-landscape-up{    
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%; 
+     }
+}
+
+p{
+    font-size: 14px;
+}
+
+
+h1{
+    font-size: 20px;
+    @include for-tablet-landscape-up{    
+        font-size: 30px;
+     }
+}
+h2{
+    font-size: 18px;
+    @include for-tablet-landscape-up{    
+        font-size: 28px;
+     }
+}
+h3{
+    font-size: 16px;
+    @include for-tablet-landscape-up{    
+        font-size: 26px;
+     }
+}
+
+h4{
+    font-size: 14px;
+    @include for-tablet-landscape-up{    
+        font-size: 22px;
+     }
+}
+h5{
+    font-size: 14px;
+    @include for-tablet-landscape-up{    
+        font-size: 18px;
+     }
+}
+
+h6{
+    font-size: 12px;
+    @include for-tablet-landscape-up{    
+        font-size: 16px;
+     }
+}
+
+strong{
+    font-family: 'ProximaNova-Bold';
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('ProximaNova-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('ProximaNova-Bold.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
