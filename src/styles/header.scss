@@ -3,6 +3,9 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: $indent*2 0;
+        padding: $indent*3 0;
+        @include for-tablet-landscape-up{    
+            padding: $indent*7 0;
+        }
     }
 }

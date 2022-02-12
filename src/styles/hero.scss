@@ -1,0 +1,16 @@
+.hero-section{
+    text-align: center;
+    h4{
+        padding: 0;
+    }
+    h1{
+        padding: $indent 0;
+    }
+    .buttons-wrapper{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: $indent*2 0;
+    }
+}

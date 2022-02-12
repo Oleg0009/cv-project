@@ -1,11 +1,14 @@
 import "./styles/main.scss";
 
+import PdfFile from './assets/CV.pdf'
 
 let changeColorButtons = document.querySelectorAll('.color-changer');
+let link = document.querySelector('.link');
+link.setAttribute('download','CV.pdf');
+link.href = PdfFile;
 let moon = document.querySelector('.moon');
 let sun = document.querySelector('.sun');
 
-console.log(changeColorButtons);
 changeColorButtons.forEach(btn=>{
     btn.addEventListener('click',changeColor)
 })
@@ -25,3 +28,4 @@ function changeColor(){
         return;
     }
 }
+
