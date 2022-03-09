@@ -1,7 +1,10 @@
 
-@import "normalize.scss";
-@import "mixins.scss";
+@import "./libs/normalize.scss";
+@import "./libs/mixins.scss";
 @import "styleguide.scss";
-@import "header.scss";
-@import "hero.scss";
+
+
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/footer.scss";
 
