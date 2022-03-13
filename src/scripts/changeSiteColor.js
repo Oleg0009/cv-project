@@ -12,12 +12,14 @@ function changeColor(){
         moon.classList.remove('hidden');
         sun.classList.add('hidden');
         document.body.classList.remove('light');
+        document.body.classList.add('dark');
         return;
     }
     if(sun.classList.contains('hidden')){
         sun.classList.remove('hidden');
         moon.classList.add('hidden');
         document.body.classList.add('light');
+        document.body.classList.remove('dark');
         return;
     }
 }

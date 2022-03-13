@@ -121,8 +121,18 @@ strong{
     text-decoration: none;
     font-size: 16px;
     margin:$indent*2;
+    &.black{
+        background-color: $bg-color-dark;
+    }
   }
-  
+  .light{
+    .button {
+        &.black{
+            color: $text-color-dark;
+            background-color:$bg-color-light;
+        }
+      }
+  }
   /* Hover state animation applied here */
   .button:hover { 
     -webkit-animation: hover 1200ms linear 2 alternate;
