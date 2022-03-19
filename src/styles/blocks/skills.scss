@@ -1,0 +1,25 @@
+.skills{
+    display: flex;
+    justify-content: space-around;
+    &__personal{
+        width: 100%;
+        margin: 0 10px;
+        display: block;
+    }
+    &__development{
+        width: 100%;
+        margin: 0 10px;
+        display: block;
+    }
+    &__li{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: left;
+        margin: 20px 0;
+        text-transform: uppercase;
+    }
+    svg{
+        margin-right: 10px;
+    }
+}

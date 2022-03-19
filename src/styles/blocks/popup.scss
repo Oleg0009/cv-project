@@ -7,6 +7,7 @@
     z-index: 3;
     background-color: rgba(255,255,255,0.2);
     overflow: hidden;
+    color: $text-color-dark;
     &__wrap{
         position:absolute;
         top: 50%;
@@ -28,6 +29,31 @@
     }
     &.open{
         display: block;
+    }
+    &.bigdrop{
+        .change-path{
+            fill: $text-color-dark;
+        }
+
+    }
+    &__content{
+        text-align: center;
+        margin: 20px 0;
+        h4{
+
+        }
+    }
+
+
+
+    &__image{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    &__block{
+        color: $text-color-dark;
+        text-align: center;
     }
     .close{
         position: absolute;
