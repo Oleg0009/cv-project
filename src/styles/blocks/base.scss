@@ -33,6 +33,23 @@
 
 main{
     section{
-        margin-bottom:$indent*20;
+       height: 100vh;
+       margin-bottom: 40px;
     }
 }
+
+.block-shadow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    box-shadow: inset 0 0 0.5em rgba(0,0,0,0.1),0.2em 0.2em 0.5em rgba(0,0,0,0.2);
+}
+.dark{
+    .block-shadow{
+        box-shadow: inset 0.2em 0.2em 0.5em rgba(238,238,238,0.1),0.2em 0.2em 0.5em rgba(238,238,238,0.2); 
+    }
+}
+

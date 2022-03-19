@@ -1,7 +1,5 @@
 
 let topBtn = document.getElementById('topBtn');
-console.log(topBtn);
-
 
 topBtn.addEventListener("click", e => {
     window.scrollTo({
@@ -13,8 +11,10 @@ topBtn.addEventListener("click", e => {
   
 window.addEventListener('scroll', e => {
     if(window.scrollY > 20){
+        document.body.classList.add('scrolled');
         topBtn.classList.add('showed');   
     }else{
-        topBtn.classList.remove('showed');   
+        topBtn.classList.remove('showed');  
+        document.body.classList.remove('scrolled');
     }
 });

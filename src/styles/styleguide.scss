@@ -121,6 +121,8 @@ strong{
     text-decoration: none;
     font-size: 16px;
     margin:$indent*2;
+    max-width: 110px;
+    width: 100%;
     &.black{
         background-color: $bg-color-dark;
     }

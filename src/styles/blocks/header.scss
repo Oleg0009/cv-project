@@ -1,4 +1,8 @@
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
     .container{
         display: flex;
         justify-content: space-between;
@@ -10,6 +14,29 @@ header{
     }
 }
 
-main{
-    height: 10000px;
+
+
+.light{
+    header{
+       background-color: $bg-color-light;
+    }
+}
+.dark{
+    header{
+        background-color: $bg-color-dark; 
+
+    }
+}
+.scrolled{
+    header{
+        box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5); 
+    }
+}
+
+.dark{
+    &.scrolled{
+        header{
+            box-shadow: 0 -6px 10px 5px rgba(238,238,238,0.5); 
+        }
+    }
 }

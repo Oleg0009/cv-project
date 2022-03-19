@@ -1,0 +1,16 @@
+.experience-section{
+    .companies{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subtext{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .block-shadow{
+        cursor: pointer;
+        svg{
+            pointer-events: none;
+        }
+    }
+}

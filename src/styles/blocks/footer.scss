@@ -24,18 +24,25 @@
     }
 }
 
-
 .light{
     .change-svg{
-        svg,path{
+        svg,
+        path{
             fill: $text-color-dark;
         }
+    }
+    .change-path{
+        fill: $text-color-dark;
     }
 }
 .dark{
     .change-svg{
-        svg,path{
+        svg,
+        path{
             fill: $text-color-light;
         }
+    }
+    .change-path{
+        fill: $text-color-light;
     }
 }
