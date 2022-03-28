@@ -1,13 +1,12 @@
 
-let topBtn = document.getElementById('topBtn');
-
-topBtn.addEventListener("click", e => {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    });
+const topBtn = document.getElementById('topBtn');
+const goToTop = () => window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
 });
+
+topBtn.addEventListener("click",goToTop);
   
 window.addEventListener('scroll', e => {
     if(window.scrollY > 20){
@@ -18,3 +17,9 @@ window.addEventListener('scroll', e => {
         document.body.classList.remove('scrolled');
     }
 });
+
+
+var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+  });
